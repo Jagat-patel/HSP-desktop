@@ -690,39 +690,17 @@
     }
 }
 .counter-item {
-    h6 {
-        position: relative;
-        &::before {
-            content: "";
-            width: 100px;
-            height: 4px;
-            left: 50%;
-            bottom: 5px;
-            @include mixins.transform(translateX(-50%));
-            background: variables.$success;
-            position: absolute;
-        }
-        &.secondary-count {
-            &::before {
-                background: variables.$secondary;
-            }
-        }
-        &.pink-count {
-            &::before {
-                background: variables.$pink;
-            }
-        }
-        &.purple-count {
-            &::before {
-                background: variables.$purple;
-            }
-        }
-        &.warning-count {
-            &::before {
-                background: variables.$warning;
-            }
-        }
+    width: calc(25% - 18px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    @include mixins.rounded(10px);
+    padding: 24px;
+    
+   h6 {
+    span {
+        color: variables.$gray-900;
     }
+    color: variables.$primary;
+   }
      p{
         margin-bottom: 0;
      }
