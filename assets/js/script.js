@@ -3948,14 +3948,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
-	// Scroll Spy & Smooth Scroll
+	// Scroll Spy & Smooth Scroll & Parallax
 	$(window).on('scroll', function () {
-		var scrollDistance = $(window).scrollTop() + 120;
+		var scrollTop = $(window).scrollTop();
+		var scrollDistance = scrollTop + 120;
 		$('.d-section').each(function (i) {
 			if ($(this).position().top <= scrollDistance) {
 				$('.main-nav li.active').removeClass('active');
 				$('.main-nav a[href="#' + $(this).attr('id') + '"]').parent().addClass('active');
 			}
+		});
+
+		$('.parallax-scroll').each(function () {
+			var speed = $(this).data('speed');
+			var yPos = scrollTop * speed;
+			$(this).css('transform', 'translateY(' + yPos + 'px)');
 		});
 	});
 

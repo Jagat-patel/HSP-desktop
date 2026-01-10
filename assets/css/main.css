@@ -15471,6 +15471,14 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav > a i {
   height: 28px;
   border-radius: 4px;
 }
+@media (max-width: 767.98px) {
+  .faq-info .accordion-button:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 .faq-info .accordion-button:not(.collapsed)::after {
   content: "\e996";
   color: #ffffff;
@@ -15479,7 +15487,7 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav > a i {
 @media (max-width: 767.98px) {
   .faq-info .accordion-button {
     font-size: 14px;
-    padding-right: 30px;
+    padding-right: 40px;
     line-height: 24px;
   }
 }
@@ -58691,6 +58699,14 @@ ul li {
   width: 24px;
   height: 24px;
 }
+@media (max-width: 767.98px) {
+  .bookus-section .faq-info .accordion-item .accordion-button::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 .bookus-section .faq-info .accordion-item .accordion-button:not(.collapsed) {
   color: #b64883;
 }
@@ -59315,6 +59331,47 @@ body .footer-about .social-icon ul li a:hover {
 }
 body .footer-about .social-icon ul li a:hover i {
   color: #FFF;
+}
+
+.parallax-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.parallax-shapes img {
+  position: absolute;
+  opacity: 0.15;
+}
+.parallax-shapes .shape-1 {
+  top: 5%;
+  left: -50px;
+  width: 200px;
+}
+.parallax-shapes .shape-2 {
+  bottom: 10%;
+  right: -30px;
+  width: 150px;
+}
+.parallax-shapes .shape-3 {
+  top: 15%;
+  right: -40px;
+  width: 180px;
+}
+.parallax-shapes .shape-4 {
+  bottom: 15%;
+  left: -20px;
+  width: 120px;
+}
+
+.banner-section .container,
+.why-choose-list-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 /****** UTILS ******/
