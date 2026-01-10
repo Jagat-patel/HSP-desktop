@@ -1934,6 +1934,12 @@
             height: 28px;
             border-radius: 4px;
             @extend %inlineflex-align-center;
+            @include mixins.respond-below(md) {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
         &:not(.collapsed)::after {
             content: "\e996";
@@ -1942,7 +1948,7 @@
         }
         @include mixins.respond-below(md) {
             font-size: variables.$font-size-14;
-            padding-right: 30px;
+            padding-right: 40px;
             line-height: 24px;
         }
     }

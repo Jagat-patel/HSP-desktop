@@ -531,12 +531,18 @@
                     background: variables.$gray-800;
                     width: 24px;
                     height: 24px;
+                    @include mixins.respond-below(md) {
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
                 }
                 &:not(.collapsed) {
                     color: variables.$primary;
                     &::after {
                         background: variables.$primary;
-                    }
+                       }
                 }
             }
             .accordion-body {
@@ -1145,4 +1151,32 @@ body {
         }
     }
 }
+}
+
+// Parallax Shapes
+.parallax-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        opacity: 0.15;
+    }
+
+    .shape-1 { top: 5%; left: -50px; width: 200px; }
+    .shape-2 { bottom: 10%; right: -30px; width: 150px; }
+    .shape-3 { top: 15%; right: -40px; width: 180px; }
+    .shape-4 { bottom: 15%; left: -20px; width: 120px; }
+}
+
+.banner-section .container,
+.why-choose-list-section .container {
+    position: relative;
+    z-index: 2;
 }
