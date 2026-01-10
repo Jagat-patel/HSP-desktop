@@ -17,9 +17,9 @@ $font-awesome: "Fontawesome";
 $font-iconsax: 'iconsax';
 
 // Theme Colors Variables
-$primary: #3790FF;
+$primary: #b64883;
 $primary-hover: color.adjust($primary, $lightness: -10%);
-$secondary: #822BD4;
+$secondary: #5aadc9;
 $secondary-hover: color.adjust($secondary, $lightness: -10%);
 $success: #04BD6C;
 $success-hover: color.adjust($success, $lightness: -10%);
@@ -41,15 +41,15 @@ $indigo: #3538CD;
 $orange: #E04F16;
 
 // Primary
-$primary-100: #EAF3FF;
-$primary-200: #D4E8FF;
-$primary-300: #BFDCFF;
-$primary-400: #AAD0FF;
-$primary-500: #95C4FF;
-$primary-600: #7FB7FF;
-$primary-700: #69ABFF;
-$primary-800: #519EFF;
-$primary-900: #3790FF;
+$primary-100: #F8EDF3;
+$primary-200: #EAC8DD;
+$primary-300: #DAA3C1;
+$primary-400: #C87FA2;
+$primary-500: #B64883;
+$primary-600: #A44176;
+$primary-700: #7F325C;
+$primary-800: #5B2442;
+$primary-900: #361627;
 
 // Secondary
 $secondary-100: #F1ECFD;
@@ -239,7 +239,7 @@ $purple-transparent: #F2EDFE;
 $cyan-transparent: #E9F8FB;
 $indigo-transparent: #EDEDFB;
 $orange-transparent: #FCEFEA;
-$primary-gradient: linear-gradient(90.08deg, #0E82FD 0.09%, #06AED4 70.28%);
+$primary-gradient: linear-gradient(90.08deg, #5aadc9 0.09%, #b64883 70.28%);
 
 // Style Anchor Elements
 $link-color: $primary;

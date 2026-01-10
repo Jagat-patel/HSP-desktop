@@ -86,7 +86,7 @@
 				z-index: 1060;
 				@include mixins.transform(translateX(-260px));
 				@include mixins.transition(all 0.4s);
-				background-color: colors.$blue;
+				background-color: colors.$white;
 				@include mixins.position(variables.$fixed, 0, null, 0, 0);
 			}
 		}
@@ -206,7 +206,7 @@
 
 					@include mixins.respond-below(lg) {
 						line-height: 1.5;
-						color: colors.$white;
+						color: variables.$gray-600;
 						font-size: variables.$font-size-14;
 						font-weight: variables.$font-weight-medium;
 						@include mixins.margin-padding(null, 15px 20px !important);
@@ -2508,7 +2508,7 @@ header {
 						height: 22px;
 						background: transparent;
 						@include mixins.rounded(50%);
-						color: variables.$gray-600;
+						color: variables.$primary;
 						font-size: variables.$font-size-14;
 						margin-right: 8px;
 						display: inline-flex;
