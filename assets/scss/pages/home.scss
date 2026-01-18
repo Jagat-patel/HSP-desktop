@@ -928,6 +928,9 @@
 .banner-img {
     position: variables.$relative;
     text-align: right;
+    .k-image {
+        max-width: 85%;
+    }
     .banner-img1 {
         @include mixins.position(variables.$absolute, 260px, null, null, -20px);
         -webkit-animation: float 2s ease-in-out infinite;
@@ -971,7 +974,7 @@
         }
     }
     @include mixins.respond-below(lg) {
-        display: none;
+        // display: none;
     }
 }
 
