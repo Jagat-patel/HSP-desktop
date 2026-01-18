@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../utils/variables";
 
 .floating-actions {
@@ -31,7 +32,7 @@
     &.whatsapp {
       background-color: #25D366;
       &:hover {
-        background-color: darken(#25D366, 5%);
+        background-color: color.adjust(#25D366, $lightness: -5%);
       }
     }
 
