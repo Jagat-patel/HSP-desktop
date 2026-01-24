@@ -928,6 +928,8 @@
 .banner-img {
     position: variables.$relative;
     text-align: right;
+
+
     .k-image {
         max-width: 85%;
     }
@@ -974,8 +976,14 @@
         }
     }
     @include mixins.respond-below(lg) {
-        // display: none;
+        text-align: center;
+        max-width: 520px;
+        margin: 0 auto;
     }
+    @include mixins.respond-below(md) {
+        max-width: 535px;
+    }
+
 }
 
 .specialities-section-one {
