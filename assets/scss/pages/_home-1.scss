@@ -568,6 +568,32 @@
     }
     img {
         @include mixins.rounded(10px);
+        width: 100%;
+        object-fit: cover;
+    }
+    // First full-width image
+    .col-md-12 {
+        img {
+            height: 350px;
+            @include mixins.respond-below(lg) {
+                height: 300px;
+            }
+            @include mixins.respond-below(md) {
+                height: 250px;
+            }
+        }
+    }
+    // Bottom two square images
+    .col-sm-6 {
+        img {
+            height: 250px;
+            @include mixins.respond-below(lg) {
+                height: 200px;
+            }
+            @include mixins.respond-below(md) {
+                height: 180px;
+            }
+        }
     }
 }
 .book-item {
