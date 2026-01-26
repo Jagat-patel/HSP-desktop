@@ -58134,6 +58134,12 @@ ul li {
 .banner-section.banner-sec-one {
   background: url("../img/bg/home-banner-bg.png") no-repeat;
   background-size: cover;
+  padding-bottom: 0;
+}
+@media (max-width: 1199.98px) {
+  .banner-section.banner-sec-one .row {
+    align-items: end !important;
+  }
 }
 @media (max-width: 991.98px) {
   .banner-section.banner-sec-one {
@@ -58257,6 +58263,7 @@ ul li {
   content: "";
   background: url("../img/bg/banner-bg-01.png") no-repeat;
   background-position: top center;
+  background-size: contain;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -58286,6 +58293,13 @@ ul li {
   font-size: 12px;
   margin-bottom: 0;
 }
+@media (max-width: 991.98px) {
+  .banner-section.banner-sec-one .banner-img .banner-appointment {
+    top: initial;
+    bottom: 20px;
+    left: 0%;
+  }
+}
 .banner-section.banner-sec-one .banner-img .banner-patient {
   background: #000F28;
   padding: 10px;
@@ -58307,6 +58321,12 @@ ul li {
 }
 .banner-section.banner-sec-one .banner-img .banner-patient .avatar-group-sm img {
   border: 0;
+}
+@media (max-width: 1199.98px) {
+  .banner-section.banner-sec-one .banner-img .banner-patient {
+    bottom: initial;
+    top: 140px;
+  }
 }
 .banner-section.banner-sec-one .banner-bg .banner-bg-01 {
   position: absolute;

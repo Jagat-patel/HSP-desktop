@@ -5,6 +5,12 @@
     &.banner-sec-one {
         background: url('../img/bg/home-banner-bg.png') no-repeat;
         background-size: cover;
+        padding-bottom: 0;
+        @include mixins.respond-below(xl) {
+        .row {
+            align-items: end !important;
+        }
+        }
         @include mixins.respond-below(lg) {
             padding-top: 68px;
         }
@@ -117,6 +123,7 @@
                 content: "";
                 background: url('../img/bg/banner-bg-01.png') no-repeat;
                 background-position: top center;
+                background-size: contain;
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -141,6 +148,11 @@
                     font-size: variables.$font-size-12;
                     margin-bottom: 0;
                 }
+                @include mixins.respond-below(lg) {
+                    top: initial;
+        bottom: 20px;
+        left: 0%;
+                }
             }
             .banner-patient {
                 background: variables.$dark;
@@ -162,6 +174,10 @@
                     img {
                         border: 0;
                     }
+                }
+                @include mixins.respond-below(xl) {
+                    bottom: initial;
+                    top: 140px;
                 }
             }
         }
