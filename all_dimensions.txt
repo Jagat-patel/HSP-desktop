@@ -1,0 +1,4 @@
+Dimensions
+/Users/jagatpatel/Documents/GitHub/HSP-desktop/assets/img/arthrose-logo.png
+  pixelWidth: 772
+  pixelHeight: 215
