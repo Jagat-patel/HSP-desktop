@@ -142,11 +142,19 @@
                 animation: mover 3s infinite alternate;
                 position: absolute;
                 right: 0;
-                top: 50%;
-                @include mixins.transform(translateY(-50%));
+                top: 70%;
+                @include mixins.transform(translateY(-70%));
                 p {
                     font-size: variables.$font-size-12;
                     margin-bottom: 0;
+                }
+                @include mixins.respond-below(xxl) {
+                    top: 65%;
+                    @include mixins.transform(translateY(-65%));
+                }
+                @include mixins.respond-below(xl) {
+                    top: 60%;
+                    @include mixins.transform(translateY(-60%));
                 }
                 @include mixins.respond-below(lg) {
                     top: initial;
