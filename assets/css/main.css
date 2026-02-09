@@ -58284,14 +58284,30 @@ ul li {
   animation: mover 3s infinite alternate;
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
+  top: 70%;
+  transform: translateY(-70%);
+  -webkit-transform: translateY(-70%);
+  -ms-transform: translateY(-70%);
 }
 .banner-section.banner-sec-one .banner-img .banner-appointment p {
   font-size: 12px;
   margin-bottom: 0;
+}
+@media (max-width: 1399.98px) {
+  .banner-section.banner-sec-one .banner-img .banner-appointment {
+    top: 65%;
+    transform: translateY(-65%);
+    -webkit-transform: translateY(-65%);
+    -ms-transform: translateY(-65%);
+  }
+}
+@media (max-width: 1199.98px) {
+  .banner-section.banner-sec-one .banner-img .banner-appointment {
+    top: 60%;
+    transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+  }
 }
 @media (max-width: 991.98px) {
   .banner-section.banner-sec-one .banner-img .banner-appointment {
