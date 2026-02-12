@@ -13912,21 +13912,52 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav > a i {
 }
 .banner-content h1 {
   font-weight: 700;
-  font-size: 44px;
-  margin-bottom: 15px;
+  font-size: 60px;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  letter-spacing: -0.5px;
 }
-.banner-content h1 span {
-  color: #b64883;
+@keyframes float-icon {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.banner-content h1 span.text-gradient {
+  background: linear-gradient(90.08deg, #5aadc9 0.09%, #b64883 70.28%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.banner-content h1 span.banner-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  animation: float-icon 3s ease-in-out infinite;
+}
+.banner-content h1 span.banner-icon img {
+  width: auto;
+  height: 65px;
+  display: block;
 }
 @media (max-width: 991.98px) {
   .banner-content h1 {
-    font-size: 36px;
+    font-size: 44px;
   }
 }
 @media (max-width: 767.98px) {
   .banner-content h1 {
-    font-size: 28px;
+    font-size: 34px;
     margin-bottom: 20px;
+  }
+  .banner-content h1 span.banner-icon img {
+    height: 40px;
   }
 }
 .banner-content .header-icon {

@@ -699,17 +699,48 @@
     position: variables.$relative;
     h1 {
         font-weight: variables.$font-weight-bold;
-        font-size: variables.$font-size-44;
-        margin-bottom: 15px;
-        span {
-            color: variables.$primary;
+        font-size: variables.$font-size-60;
+        line-height: 1.25;
+        margin-bottom: 25px;
+        letter-spacing: -0.5px;
+        
+        @keyframes float-icon {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
         }
+
+        span {
+            &.text-gradient {
+                background: variables.$primary-gradient;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: inline-block;
+            }
+            &.banner-icon {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 5px;
+                animation: float-icon 3s ease-in-out infinite;
+                img {
+                    width: auto;
+                    height: 65px;
+                    display: block;
+                }
+            }
+        }
+        
         @include mixins.respond-below(lg) {
-            font-size: variables.$font-size-36;
+            font-size: variables.$font-size-44;
         }
         @include mixins.respond-below(md) {
-            font-size: variables.$font-size-28;
+            font-size: variables.$font-size-34;
             margin-bottom: 20px;
+            
+            span.banner-icon img {
+                height: 40px;
+            }
         }
     }
     .header-icon {
