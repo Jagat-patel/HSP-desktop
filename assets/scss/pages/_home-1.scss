@@ -583,17 +583,12 @@
     }
 }
 .bookus-img {
-    margin-right: 80px;
-    @include mixins.respond-below(xl) {
-        margin-right: 50px;
-    }
-    @include mixins.respond-below(lg) {
-        margin-right: 0;
-    }
+    
     
     img {
         @include mixins.rounded(10px);
         width: 100%;
+        height: 100%;
         object-fit: cover;
     }
     // First full-width image
@@ -604,14 +599,14 @@
                 height: 300px;
             }
             @include mixins.respond-below(md) {
-                height: 250px;
+                height: 150px;
             }
         }
     }
     // Bottom two square images
-    .col-sm-6 {
+    .col-6 {
         img {
-            height: 250px;
+            height: 450px;
             @include mixins.respond-below(lg) {
                 height: 200px;
             }

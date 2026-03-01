@@ -3823,7 +3823,11 @@ Version      : 1.3
 			margin: 24,
 			dots: false,
 			nav: false,
-			smartSpeed: 2000,
+			smartSpeed: 200,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
+			autoplaySpeed: 2000,
 			responsive: {
 				0: {
 					items: 1
